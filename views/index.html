@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+<meta charset="UTF-8">
+<title>Sample website using Bootstrap and ExpressJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
+<!---CDN Links-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/theme1.css"> 
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="header">
+[[[{
+"name":"header",
+"host":"http://apis.newegg.org",
+"path":"/widget/header",
+"parameters":{"itemList":["11-11-111","00-111-111"],"storeid":"{storeid}"}
+}]]]
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2" id="leftSider">
+[[[{
+"name":"left",
+"host":"http://apis.newegg.org",
+"path":"/widget/leftsider",
+"parameters":{"id":1,"storeid":"{storeid}"}
+}]]]
+		</div>
+		<div class="col-md-8" id="centerPanel">
+[[[{
+"name":"center",
+"host":"http://apis.newegg.org",
+"path":"/widget/center",
+"parameters":{"id":2,"storeid":"{storeid}","count":20,"storetype":"{storetype}"}
+}]]]
+
+[[[{
+"name":"center1",
+"host":"http://apis.newegg.org",
+"path":"/widget/center",
+"parameters":{"id":2,"storeid":"{storeid}","count":20,"storetype":"{storetype}"}
+}]]]
+		</div>
+		<div class="col-md-2" id="rightSider">
+[[[{
+"name":"right",
+"host":"http://apis.newegg.org",
+"path":"/widget/rightsider",
+"parameters":{"id":1,"storeid":"{storeid}"}
+}]]]
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12" id="footer">
+[[[{
+"name":"footer",
+"host":"http://apis.newegg.org",
+"path":"/widget/footer",
+"parameters":{"id":1,"storeid":"{storeid}"}
+}]]]
+		</div>
+	</div>
+</div>
+</body>
+</html>
